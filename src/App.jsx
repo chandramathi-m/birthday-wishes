@@ -5,7 +5,8 @@ import Navbar  from "./components/layout/Navbar";
 import Footer  from "./components/layout/Footer";
 
 // Features (floating / global UI)
-import MusicToggle from "./components/features/MusicToggle";
+import MusicToggle    from "./components/features/MusicToggle";
+import MidnightReveal from "./components/features/MidnightReveal";
 
 // Sections (top → bottom page order)
 import HeroSection      from "./components/sections/HeroSection";
@@ -21,10 +22,13 @@ import BirthdayWish     from "./components/sections/BirthdayWish";
 export default function App() {
   return (
     <>
+      {/* Midnight birthday reveal — renders as full-screen overlay on April 11 */}
+      <MidnightReveal />
+
       {/* Floating global UI */}
       <MusicToggle />
 
-      {/* Page shell — Navbar now contains the translate pill */}
+      {/* Page shell — Navbar contains the translate pill */}
       <Navbar />
 
       {/* Page sections */}

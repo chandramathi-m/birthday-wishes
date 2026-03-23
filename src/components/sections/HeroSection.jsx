@@ -26,12 +26,12 @@ export default function HeroSection() {
       {/* ── Background image crossfade ── */}
       {HERO_BG_IMAGES.map((src, i) => (
         <div key={i} style={{ position: "absolute", inset: 0, zIndex: 0, opacity: i === bgIndex ? 1 : 0, transition: "opacity 1.8s ease" }}>
-          <img src={src} alt="" style={{ width: "100%", height: "100%", objectFit: "cover", animation: i === bgIndex ? "bgZoom 10s ease-in-out both" : "none", filter: "brightness(0.22) saturate(0.5)" }} />
+          <img src={src} alt="" style={{ width: "100%", height: "100%", objectFit: "cover", animation: i === bgIndex ? "bgZoom 10s ease-in-out both" : "none", filter: "brightness(0.48) saturate(0.75)" }} />
         </div>
       ))}
 
       {/* ── Gradient overlays ── */}
-      <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "linear-gradient(to bottom, rgba(8,8,8,.45) 0%, rgba(8,8,8,.15) 50%, rgba(8,8,8,.75) 100%)" }} />
+      <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "linear-gradient(to bottom, rgba(8,8,8,.25) 0%, rgba(8,8,8,.05) 50%, rgba(8,8,8,.55) 100%)" }} />
       <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "radial-gradient(ellipse at center, rgba(191,141,60,.07) 0%, transparent 70%)", animation: "pulse 6s ease-in-out infinite" }} />
 
       {/* ── Slide dots ── */}
