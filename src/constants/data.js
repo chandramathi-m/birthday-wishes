@@ -168,7 +168,7 @@ export const STORY_SLIDES = [
   { slide: "07", text: "Pain is not pain for him…\nit's happiness.", img: gym2 },
   { slide: "08", text: "He didn't change…\nHe transformed.", img: sidelook },
   { slide: "09", text: "Friends. Memories. Brotherhood.\nMoments that matter", img: brothers },
-  { slide: "10", text: "Still rising…\nStill chasing…\nStill becoming…", img: sidelook },
+  { slide: "10", text: "Still rising…\nStill chasing…\nStill becoming…", img: greenSky },
 ];
 
 // ── Birthday wish section ─────────────────────────────────────────────────────
