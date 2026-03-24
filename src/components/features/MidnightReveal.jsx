@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 // ── Config ────────────────────────────────────────────────────────────────────
 // 🧪 TEST MODE — set true to trigger reveal immediately for local testing
 //               remember to set back to false before the real birthday!
-const TEST_MODE      = true;
+const TEST_MODE      = false;
 
 const BIRTHDAY_MONTH = 3;   // 0-indexed: 3 = April
 const BIRTHDAY_DAY   = 11;
