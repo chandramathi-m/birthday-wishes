@@ -128,9 +128,10 @@ export default function BirthdayWish() {
           />
 
           {/* Quotes beneath the video */}
-          <div style={{ marginTop: "28px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
+          <div className="quotes-beneath-video" style={{ marginTop: "28px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
             {WISH_VIDEO_QUOTES.map(({ icon, text }, i) => (
               <div
+                className="wish-video-quotes"
                 key={i}
                 style={{ padding: "24px 28px", background: "rgba(191,141,60,.04)", border: "0.5px solid rgba(191,141,60,.18)", borderRadius: "2px", display: "flex", gap: "14px", alignItems: "flex-start" }}
               >

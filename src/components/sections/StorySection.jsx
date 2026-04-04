@@ -17,7 +17,7 @@ export default function StorySection() {
 
       <div style={{ display: "flex", flexDirection: "column", gap: "80px" }}>
         {STORY_CHAPTERS.map((ch, i) => (
-          <div key={ch.num} className={`reveal reveal-delay-${i + 1}`} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "56px", alignItems: "center" }}>
+          <div key={ch.num} className={`story-cls reveal reveal-delay-${i + 1}`} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "56px", alignItems: "center" }}>
 
             {/* Image left on even */}
             {i % 2 === 0 && <ChapterImage ch={ch} />}
@@ -44,7 +44,7 @@ export default function StorySection() {
 
 function ChapterImage({ ch }) {
   return (
-    <div style={{ position: "relative", overflow: "hidden", borderRadius: "2px", aspectRatio: "4/5" }}>
+    <div className="chapter-image" style={{ position: "relative", overflow: "hidden", borderRadius: "2px", aspectRatio: "4/5" }}>
       <img src={ch.img} alt={ch.title} className="img-cinematic" />
       <div style={{ position: "absolute", inset: "12px", border: "0.5px solid rgba(191,141,60,.4)", borderRadius: "1px", pointerEvents: "none" }} />
       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "50%", background: "linear-gradient(to top,rgba(8,8,8,.75),transparent)", pointerEvents: "none" }} />

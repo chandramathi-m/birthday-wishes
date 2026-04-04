@@ -16,7 +16,7 @@ import thalapathystyle from "../assets/images/thalapathystyle.jpeg";
 import car from "../assets/images/car.jpeg";
 import theatre from "../assets/images/theatre.jpeg";
 import babypic from "../assets/images/babypic.jpeg";
-import school from "../assets/images/school.jpeg";
+import school from "../assets/images/update-childhood.png";
 import dance from "../assets/images/dance.jpg";
 import gym1 from "../assets/images/gym1.jpeg";
 import gym2 from "../assets/images/gym2.jpeg";
